@@ -1,5 +1,11 @@
 import streamlit as st
-import cv2
+
+try:
+    import cv2
+    st.write("cv2 loaded successfully")
+except Exception as e:
+    st.error(f"cv2 import failed: {e}")
+    st.stop()
 import joblib
 import pandas as pd
 import numpy as np
