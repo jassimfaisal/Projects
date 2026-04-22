@@ -1,4 +1,4 @@
-
+import streamlit as st
 try:
     import cv2
     st.write("cv2 loaded successfully")
@@ -9,7 +9,6 @@ import os
 import joblib
 import numpy as np
 import pandas as pd
-import streamlit as st
 from ultralytics import YOLO
 
 
